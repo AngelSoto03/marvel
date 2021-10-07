@@ -6,30 +6,82 @@
 <head>
 	<meta charset="utf-8">
 	<title>Black Panther</title>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- This says our CSS is compatible with phones, and phones
+       don't need to scale it strangely. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	      rel="stylesheet"
+	      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	      crossorigin="anonymous">
+
+	  <!-- Optional theme add-on -->
+	<link rel="stylesheet"
+	      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN"
+	      crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+
 </head>
 
 <body>
 	<header>
-		<nav>
-			<h1>Marvel Movies Explained</h1>
-			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="iron_man.html">Iron Man</a></li>
-			<li><a href="thor.html">Thor</a></li>
-			<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-			<li><a href="black_panther.html" class="active">Black Panther</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+		    <div class="container-fluid">
+		      <!-- Brand/site name -->
+		      <a class="navbar-brand" href="index.html">Marvel Movies Explained</a>
+		      <!-- Hamburger icon -->
+		      <button class="navbar-toggler"
+		              type="button"
+		              data-bs-toggle="collapse"
+		              data-bs-target="#navbarSupportedContent"
+		              aria-controls="navbarSupportedContent"
+		              aria-expanded="false"
+		              aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <!-- Div to hide stuff if we have hamburger -->
+		      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		        <!-- Nav bar item list -->
+		        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+		          <li class="nav-item">
+		            <!-- This is the style for the 'active' page -->
+		            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+		          </li>
+
+		          <li class="nav-item">
+		            <a class="nav-link" href="about.html">About</a>
+		          </li>
+
+		          <li class="nav-item">
+		            <a class="nav-link" href="iron_man.html">Iron Man</a>
+		          </li>
+
+		          <li class="nav-item">
+		            <a class="nav-link" href="thor.html">Thor</a>
+		          </li>
+
+		          <li class="nav-item">
+		            <a class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+		          </li>
+
+		          <li class="nav-item">
+		            <a class="nav-link active" href="black_panther.html">Black Panther</a>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
 		</nav>
 	</header>
 
-	<h2 id="text">Black Panther</h2>
+	<div class="container-fluid">
+
+	<h1>Black Panther</h1>
 
 	<p><img src="img/pantherpic.png" alt="Picture of Black Panther on rock"></p>
 
-	<h3>King of Wakanda</h3>
+	<h2>King of Wakanda</h2>
 
 	<p>This movie is set in Marvel's own Wakanda, Africa. It is 
 	a highly advanced society that is protected and ruled by one 
@@ -40,10 +92,17 @@
 	<p>One of Wakanda's most valuable resources is a metallic 
 	material known as Vibranium. It is able to absorb sound waves, 
 	vibrations, as well as kinetic energy. It is the main resource
-	that powers Wakanda and fuels their technology. This metal is the
-	same metal that was used to make Captain America's undestructible 
-	shield</p>
-	<p><img src="img/capshield.png" alt="Captain America's Shield"></p>
+	that powers Wakanda and fuels their technology.</p>
+
+	<div class="card" style="width: 18rem;">
+		<img src="img/capshield.png" alt="Captain America's Shield">
+		<div class="card-body">
+			<h4 class="card-title">Captain America's Shield</h4>
+			<p class="card-text"> This is Cap's Shield. It is made of the same vibranium that was mentioned earlier. 
+		</div>
+	</div>
+	
+
 	<p>The antagonists of the story seek to steal the Vibranium and
 	sell it. T'Challa eventually partners with Agent Phil, a member
 	of S.H.I.E.L.D.</p>
@@ -57,7 +116,14 @@
 	throughout the film, each one showing how physically and 
 	mentally exhausting the process is.</p>
 
-<footer> Website created by Buck and Paige </footer>
+	<footer>Website created by Buck and Paige</footer>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous">
+	</script>
+
 
 </body>
 </html>
